@@ -1,3 +1,36 @@
+我的github账号：
+	name:xiangling1991
+	pass:xiangling1992
+	addr:732495491@qq.com
+
+创建github远程仓库账号：
+	ssh-keygen  -t rsa –C “youremail@example.com”
+	在github官网setting的ssh key下创建key
+
+创建远程仓库
+	在官网上选择new Repository 添加repository name,create repository ,获得https地址
+远程仓库与本地仓库关联
+	git remote add origin https://github.com/xiangling1991/xl-github.git
+推送到远程仓库
+	git push -u origin master
+
+创建分支
+	默认的为master分支，git checkout -b dev(分支名，创建并切换)，相当于git branch dev,git checkout dev
+查看当前分支
+	git branch
+
+克隆远程库内容
+	创建一个新的远程仓库，git clone 仓库地址
+
+合并分支
+	git merge name,当前分支合并到name分支
+删除分支
+	git branch -d name
+
+禁用fast forward合并模式
+	git merge -no-ff -m "注释" branchname
+
+
 1、创建版本库
 	git init将该目录变成管理仓库
 2、将文件添加到缓存区
@@ -22,3 +55,6 @@
 	git reset -hard 版本号
 6、撤销
 	git checkout -- file
+
+7、删除
+	rm file 在删除文件后，如果没有提交，使用git checkout -- filename,可以恢复文件
