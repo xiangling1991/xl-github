@@ -1,0 +1,23 @@
+1、创建版本库
+	git init将该目录变成管理仓库
+2、将文件添加到缓存区
+	git add file
+3、提交文件到仓库
+	git commit -m "提交注释"
+4、查看是否还有文件为提交
+	git status
+
+版本回退：
+1、查看修改历史记录
+	git log
+2、演示
+	git log -pretty=oneline
+3、回退到以前版本
+	git reset -hard HEAD^：回到上个版本
+	git reset -hard HEAD^^:回到上上个版本
+	git reset -hard HEAD~100:回到前100个版本
+4、获取版本号
+	git reflog
+5、恢复指定的版本号
+	git reset -hard 版本号
+6、
