@@ -20,4 +20,5 @@
 	git reflog
 5、恢复指定的版本号
 	git reset -hard 版本号
-6、
+6、撤销
+	git checkout --file
