@@ -1,60 +1,55 @@
-ÎÒµÄgithubÕËºÅ£º
-	name:xiangling1991
-	pass:xiangling1992
-	addr:732495491@qq.com
+åˆ›å»ºgithubè¿œç¨‹ä»“åº“è´¦å·ï¼š
+	ssh-keygen  -t rsa â€“C â€œyouremail@example.comâ€
+	åœ¨githubå®˜ç½‘settingçš„ssh keyä¸‹åˆ›å»ºkey
 
-´´½¨githubÔ¶³Ì²Ö¿âÕËºÅ£º
-	ssh-keygen  -t rsa ¨CC ¡°youremail@example.com¡±
-	ÔÚgithub¹ÙÍøsettingµÄssh keyÏÂ´´½¨key
-
-´´½¨Ô¶³Ì²Ö¿â
-	ÔÚ¹ÙÍøÉÏÑ¡Ôñnew Repository Ìí¼Órepository name,create repository ,»ñµÃhttpsµØÖ·
-Ô¶³Ì²Ö¿âÓë±¾µØ²Ö¿â¹ØÁª
+åˆ›å»ºè¿œç¨‹ä»“åº“
+	åœ¨å®˜ç½‘ä¸Šé€‰æ‹©new Repository æ·»åŠ repository name,create repository ,è·å¾—httpsåœ°å€
+è¿œç¨‹ä»“åº“ä¸æœ¬åœ°ä»“åº“å…³è”
 	git remote add origin https://github.com/xiangling1991/xl-github.git
-ÍÆËÍµ½Ô¶³Ì²Ö¿â
+æ¨é€åˆ°è¿œç¨‹ä»“åº“
 	git push -u origin master
 
-´´½¨·ÖÖ§
-	Ä¬ÈÏµÄÎªmaster·ÖÖ§£¬git checkout -b dev(·ÖÖ§Ãû£¬´´½¨²¢ÇĞ»»)£¬Ïàµ±ÓÚgit branch dev,git checkout dev
-²é¿´µ±Ç°·ÖÖ§
+åˆ›å»ºåˆ†æ”¯
+	é»˜è®¤çš„ä¸ºmasteråˆ†æ”¯ï¼Œgit checkout -b dev(åˆ†æ”¯åï¼Œåˆ›å»ºå¹¶åˆ‡æ¢)ï¼Œç›¸å½“äºgit branch dev,git checkout dev
+æŸ¥çœ‹å½“å‰åˆ†æ”¯
 	git branch
 
-¿ËÂ¡Ô¶³Ì¿âÄÚÈİ
-	´´½¨Ò»¸öĞÂµÄÔ¶³Ì²Ö¿â£¬git clone ²Ö¿âµØÖ·
+å…‹éš†è¿œç¨‹åº“å†…å®¹
+	åˆ›å»ºä¸€ä¸ªæ–°çš„è¿œç¨‹ä»“åº“ï¼Œgit clone ä»“åº“åœ°å€
 
-ºÏ²¢·ÖÖ§
-	git merge name,µ±Ç°·ÖÖ§ºÏ²¢µ½name·ÖÖ§
-É¾³ı·ÖÖ§
+åˆå¹¶åˆ†æ”¯
+	git merge name,å½“å‰åˆ†æ”¯åˆå¹¶åˆ°nameåˆ†æ”¯
+åˆ é™¤åˆ†æ”¯
 	git branch -d name
 
-½ûÓÃfast forwardºÏ²¢Ä£Ê½
-	git merge -no-ff -m "×¢ÊÍ" branchname
+ç¦ç”¨fast forwardåˆå¹¶æ¨¡å¼
+	git merge -no-ff -m "æ³¨é‡Š" branchname
 
 
-1¡¢´´½¨°æ±¾¿â
-	git init½«¸ÃÄ¿Â¼±ä³É¹ÜÀí²Ö¿â
-2¡¢½«ÎÄ¼şÌí¼Óµ½»º´æÇø
+1ã€åˆ›å»ºç‰ˆæœ¬åº“
+	git initå°†è¯¥ç›®å½•å˜æˆç®¡ç†ä»“åº“
+2ã€å°†æ–‡ä»¶æ·»åŠ åˆ°ç¼“å­˜åŒº
 	git add file
-3¡¢Ìá½»ÎÄ¼şµ½²Ö¿â
-	git commit -m "Ìá½»×¢ÊÍ"
-4¡¢²é¿´ÊÇ·ñ»¹ÓĞÎÄ¼şÎªÌá½»
+3ã€æäº¤æ–‡ä»¶åˆ°ä»“åº“
+	git commit -m "æäº¤æ³¨é‡Š"
+4ã€æŸ¥çœ‹æ˜¯å¦è¿˜æœ‰æ–‡ä»¶ä¸ºæäº¤
 	git status
 
-°æ±¾»ØÍË£º
-1¡¢²é¿´ĞŞ¸ÄÀúÊ·¼ÇÂ¼
+ç‰ˆæœ¬å›é€€ï¼š
+1ã€æŸ¥çœ‹ä¿®æ”¹å†å²è®°å½•
 	git log
-2¡¢ÑİÊ¾
+2ã€æ¼”ç¤º
 	git log -pretty=oneline
-3¡¢»ØÍËµ½ÒÔÇ°°æ±¾
-	git reset -hard HEAD^£º»Øµ½ÉÏ¸ö°æ±¾
-	git reset -hard HEAD^^:»Øµ½ÉÏÉÏ¸ö°æ±¾
-	git reset -hard HEAD~100:»Øµ½Ç°100¸ö°æ±¾
-4¡¢»ñÈ¡°æ±¾ºÅ
+3ã€å›é€€åˆ°ä»¥å‰ç‰ˆæœ¬
+	git reset -hard HEAD^ï¼šå›åˆ°ä¸Šä¸ªç‰ˆæœ¬
+	git reset -hard HEAD^^:å›åˆ°ä¸Šä¸Šä¸ªç‰ˆæœ¬
+	git reset -hard HEAD~100:å›åˆ°å‰100ä¸ªç‰ˆæœ¬
+4ã€è·å–ç‰ˆæœ¬å·
 	git reflog
-5¡¢»Ö¸´Ö¸¶¨µÄ°æ±¾ºÅ
-	git reset -hard °æ±¾ºÅ
-6¡¢³·Ïú
+5ã€æ¢å¤æŒ‡å®šçš„ç‰ˆæœ¬å·
+	git reset -hard ç‰ˆæœ¬å·
+6ã€æ’¤é”€
 	git checkout -- file
 
-7¡¢É¾³ı
-	rm file ÔÚÉ¾³ıÎÄ¼şºó£¬Èç¹ûÃ»ÓĞÌá½»£¬Ê¹ÓÃgit checkout -- filename,¿ÉÒÔ»Ö¸´ÎÄ¼ş
+7ã€åˆ é™¤
+	rm file åœ¨åˆ é™¤æ–‡ä»¶åï¼Œå¦‚æœæ²¡æœ‰æäº¤ï¼Œä½¿ç”¨git checkout -- filename,å¯ä»¥æ¢å¤æ–‡ä»¶
